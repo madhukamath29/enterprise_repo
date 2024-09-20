@@ -26,9 +26,9 @@ phases:
       # Checkout and copy code from each inv-repo branch
       - cd /home/INV-Repo
       - git checkout third-party-addons
-      - cp -r third-party-addon-folder/ /home/merged_code/  # Copy the folder and its contents
-      - echo "Contents of third-party-addon-folder:"
-      - ls -l /home/merged_code/third-party-addon-folder/  # List the contents after copying
+      - cp -r third-party-addons-folder/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of third-party-addons-folder:"
+      - ls -l /home/merged_code/third-party-addons-folder/  # List the contents after copying
 
       - git checkout common-addons
       - cp -r common-addon-folder/ /home/merged_code/  # Copy the folder and its contents
