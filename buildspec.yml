@@ -36,6 +36,7 @@ phases:
       - git checkout prod-gst
       - cp -r custom-addons/ /home/merged_code/
       - ls -l /home/merged_code/
+      - ls -l custom-addons/
       - echo Code from inv-repo merged successfully...
 
   post_build:
