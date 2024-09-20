@@ -64,7 +64,7 @@ phases:
       - mkdir -p temp/test
       - cp -r /home/merged_code/* temp/test/
       - ls -l temp/test/
-      - echo "Artifacts
+      
 artifacts:
   files:
     - '**/*'
