@@ -59,7 +59,7 @@ phases:
       - echo "Code from INV-Repo merged successfully..."
 
   post_build:
-  commands:
+    commands:
     - echo Preparing artifacts for deployment.....
     - mkdir -p temp/test
     - cp -r /home/merged_code/* temp/test/  # Added leading slash to reference the correct path
