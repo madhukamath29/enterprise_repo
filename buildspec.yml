@@ -22,21 +22,35 @@ phases:
       - cp -r /home/enterprise/* merged_code/
       - cp -r /home/demo-odoo17/* merged_code/
       - echo Merging INV-Repo branches...
-      
+
       # Checkout and copy code from each inv-repo branch
       - cd /home/INV-Repo
       - git checkout third-party-addons
-      - cp -r * /home/merged_code/
+      - cp -r third-party-addon-folder/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of third-party-addon-folder:"
+      - ls -l /home/merged_code/third-party-addon-folder/  # List the contents after copying
+
       - git checkout common-addons
-      - cp -r * /home/merged_code/
+      - cp -r common-addon-folder/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of common-addon-folder:"
+      - ls -l /home/merged_code/common-addon-folder/  # List the contents after copying
+
       - git checkout dev-gst
-      - cp -r custom-addons/ /home/merged_code/
+      - cp -r custom-addons/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of custom-addons from dev-gst:"
+      - ls -l /home/merged_code/custom-addons/  # List the contents after copying
+
       - git checkout qa-gst
-      - cp -r custom-addons/ /home/merged_code/
+      - cp -r custom-addons/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of custom-addons from qa-gst:"
+      - ls -l /home/merged_code/custom-addons/  # List the contents after copying
+
       - git checkout prod-gst
-      - cp -r custom-addons/ /home/merged_code/
+      - cp -r custom-addons/ /home/merged_code/  # Copy the folder and its contents
+      - echo "Contents of custom-addons from prod-gst:"
+      - ls -l /home/merged_code/custom-addons/  # List the contents after copying
+
       - ls -l /home/merged_code/
-      - ls -l custom-addons/
       - echo Code from inv-repo merged successfully...
 
   post_build:
@@ -45,5 +59,4 @@ phases:
       - mkdir -p temp/test
       - cp -r /home/merged_code/* temp/test/
       - ls -l temp/test/
-      - echo Artifacts ready for deployment....
-
+      - echo Artifacts ready for deployment...
