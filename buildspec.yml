@@ -62,10 +62,10 @@ phases:
     commands:
     - echo Preparing artifacts for deployment.....
     - mkdir -p temp/test
-    - cp -r /home/merged_code/* temp/test/  # Added leading slash to reference the correct path
+    - cp -r /home/merged_code/* temp/test/  
     - ls -l temp
     - ls -l temp/test/
-    - echo Artifacts ready..............
+    - echo Artifacts ready...............
 
 artifacts:
   files:
