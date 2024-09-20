@@ -29,11 +29,11 @@ phases:
       - cp -r * /home/merged_code/
       - git checkout common-addons
       - cp -r * /home/merged_code/
-      - git checkout dev-GST
+      - git checkout dev-gst
       - cp -r custom-addons/ /home/merged_code/
-      - git checkout QA_GST
+      - git checkout qa-gst
       - cp -r custom-addons/ /home/merged_code/
-      - git checkout Prod_GST
+      - git checkout prod-gst
       - cp -r custom-addons/ /home/merged_code/
       - ls -l /home/merged_code/
       - echo Code from inv-repo merged successfully...
