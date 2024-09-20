@@ -30,7 +30,7 @@ phases:
       - git checkout common-addons
       - cp -r * /home/merged_code/
       - git checkout dev-GST
-      - cp -r custom addons/ /home/merged_code/
+      - cp -r custom-addons/ /home/merged_code/
       - git checkout Qa_GST
       - cp -r custom-addons/ /home/merged_code/
       - git checkout Prod_GST
