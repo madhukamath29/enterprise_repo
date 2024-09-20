@@ -70,5 +70,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'temp/test'
-  discard-paths: no
+  #base-directory: 'temp/test'
+  #discard-paths: no
