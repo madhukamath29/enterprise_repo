@@ -11,7 +11,7 @@ phases:
       - git clone https://github.com/madhukamath29/enterprise_repo.git /home/enterprise
       - git clone https://github.com/madhukamath29/demo-odoo17.git /home/demo-odoo17
       - git clone https://github.com/madhukamath29/INV-Repo.git /home/INV-Repo
-      - echo Repositories cloned successfully...
+      - echo Repositories cloned successfully....
 
   build:
     commands:
