@@ -44,5 +44,5 @@ phases:
       - mkdir -p temp/test
       - cp -r /home/merged_code/* temp/test/
       - ls -l temp/test/
-      - echo Artifacts ready for deployment...
+      - echo Artifacts ready for deployment....
 
