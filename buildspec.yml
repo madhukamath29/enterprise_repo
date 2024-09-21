@@ -62,12 +62,9 @@ phases:
       - echo Preparing artifacts for deployment......
       - mkdir -p ent-artifacts
       - cp -r /home/merged_code/* ent-artifacts/
-      # - ls -l temp
       - ls -l ent-artifacts/
       - echo Artifacts ready...............
 
 artifacts:
   files:
-    - '**/*'
-  #base-directory: 'temp/test/'
-  discard-paths: no
+    - ent-artifacts/**
