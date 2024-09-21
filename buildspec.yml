@@ -60,12 +60,12 @@ phases:
 
   post_build:
     commands:
-    - echo Preparing artifacts for deployment......
-    - mkdir -p temp/test
-    - cp -r /home/merged_code/* temp/test/  
-    - ls -l temp
-    - ls -l temp/test/
-    - echo Artifacts ready..................
+      - echo Preparing artifacts for deployment......
+      - mkdir -p temp/test
+      - cp -r /home/merged_code/* temp/test/
+      - ls -l temp
+      - ls -l temp/test/
+      - echo Artifacts ready..............
 
 artifacts:
   files:
