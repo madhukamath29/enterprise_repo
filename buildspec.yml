@@ -58,21 +58,22 @@ phases:
       - echo "Code from INV-Repo merged successfully....."
 
   post_build:
-  commands:
-    - echo Preparing artifacts for deployment.....
-    - mkdir -p /home/temp/test
-    - cp -r /home/merged_code/* /home/temp/test/
-    - echo "Checking /home/temp/test directory..."
-    - ls -l /home
-    - ls -l /home/temp
-    - ls -l /home/temp/test
-    - echo Artifacts ready..............
+    commands:
+      - echo Preparing artifacts for deployment.....
+      - mkdir -p /home/temp/test
+      - cp -r /home/merged_code/* /home/temp/test/
+      - echo "Checking /home/temp/test directory..."
+      - ls -l /home
+      - ls -l /home/temp
+      - ls -l /home/temp/test
+      - echo Artifacts ready..............
 
 artifacts:
   files:
     - '**/*'
   base-directory: '/home/temp/test'
   discard-paths: no
+
 
 
     
