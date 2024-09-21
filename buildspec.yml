@@ -59,16 +59,16 @@ phases:
 
   post_build:
     commands:
-      - echo Preparing artifacts for deployment......
-      - mkdir -p ent-artifacts
-      - cp -r /home/merged_code/* ent-artifacts/
-      - ls -l ent-artifacts/
-      - echo Artifacts ready...............
-      - ls -l ent-artifacts/
+      - echo Preparing artifacts for deployment.....
+      - mkdir -p temp/test
+      - cp -r merged_code/* temp/test/
+      - ls -l temp
+      - ls -l temp/test/
+      - echo Artifacts ready..............
 
 artifacts:
   files:
     - '**/*'
-  base-directory: 'ent-artifacts'
+  base-directory: 'temp/test'
   discard-paths: no
     
