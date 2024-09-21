@@ -64,7 +64,8 @@ phases:
       - cp -r /home/merged_code/* ent-artifacts/
       - ls -l ent-artifacts/
       - echo Artifacts ready...............
+      - ls -l ent-artifacts/
 
 artifacts:
   files:
-    ent-artifacts/**/*
+    ent-artifacts/**
