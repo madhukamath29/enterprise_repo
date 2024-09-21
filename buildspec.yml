@@ -69,5 +69,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'temp/test/'
+  #base-directory: 'temp/test/'
   discard-paths: no
