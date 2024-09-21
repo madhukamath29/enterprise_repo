@@ -69,6 +69,6 @@ phases:
 artifacts:
   files:
     - temp/test/**/*
-  base-directory: temp/test
+  base-directory: temp/test/
 
     
