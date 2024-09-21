@@ -68,4 +68,7 @@ phases:
 
 artifacts:
   files:
-    ent-artifacts/**
+    - '**/*'
+  base-directory: 'ent-artifacts'
+  discard-paths: no
+    
