@@ -55,7 +55,7 @@ phases:
       - echo "Contents of custom-addons from prod-gst branch:"
       - ls -l /home/merged_code/custom-addons/  # List the contents after copying
       - ls -l /home/merged_code/
-      - echo "Code from INV-Repo merged successfully...."
+      - echo "Code from INV-Repo merged successfullyy....."
 
   post_build:
     commands:
@@ -67,4 +67,4 @@ phases:
 
 artifacts:
   files:
-    - ent-artifacts/**
+    ent-artifacts/**/*
