@@ -22,7 +22,7 @@ phases:
       - cp -r /home/enterprise/* /home/merged_code/
       - cp -r /home/demo-odoo17/* /home/merged_code/
       
-      - echo "Merging INV-Repo branches...."
+      - echo "Merging INV-Repo branches....."
 
       # Merge common-addons branch
       - cd /home/INV-Repo
